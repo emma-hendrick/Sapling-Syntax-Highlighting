@@ -4,35 +4,65 @@
 	"scopeName": "source.sl",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#comments"
+		},
+		{
+			"include": "#constants"
 		},
 		{
 			"include": "#strings"
 		},
 		{
-			"include": "#comments"
+			"include": "#storage"
 		},
 		{
-			"include": "#types"
+			"include": "#keywords"
+		},
+		{
+			"include": "#punctuation"
+		},
+		{
+			"include": "#variables"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.sapling",
-				"match": "\\b(if|while|for|return)\\b"
-			},
-			{
-				"name": "keyword.other.sapling",
-				"match": "\\b(ns|using)\\b"
-			}]
+		
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.documentation",
+					"begin": "###\\_",
+					"end": "\\_###"
+				},
+				{
+					"name": "comment.block",
+					"begin": "#\\_",
+					"end": "\\_#"
+				},
+				{
+					"name": "comment.line.number-sign",
+					"match": "#.*$"
+				}
+			]
 		},
-		"types": {
-			"patterns": [{
-				"name": "entity.name.type",
-				"match": "\\b(func|void|error)\\b"
-			}]
+
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric",
+					"match": "\\d+(\\.\\d+)?"
+				},
+				{
+					"name": "constant.character",
+					"match": "'[^']'"
+				},
+				{
+					"name": "constant.language",
+					"match": "\\b(True|False)\\b"
+				}
+			]
 		},
+
 		"strings": {
 			"name": "string.quoted.double.sapling",
 			"begin": "\"",
@@ -44,18 +74,39 @@
 				}
 			]
 		},
-		"comments": {
+
+		"storage": {
+			"patterns": [{
+				"name": "storage.type",
+				"match": "\\b(int|float|str|char|bool|void)\\b"
+			}]
+		},
+
+		"keywords": {
 			"patterns": [
 				{
-					"name": "comment.line.sapling",
-					"match": "\\//.*$"
+					"name": "keyword.control",
+					"match": "\\b(if|else|for|while|return|switch|case|break|continue)\\b"
 				},
 				{
-					"name": "comment.block.sapling",
-					"begin": "\\/[*]",
-					"end": "[*]/"
+					"name": "keyword.operator",
+					"match": "(==|>|<|>=|<=|!=|=|\\+|\\-|\\*|/|&&|\\|\\||\\^)"
 				}
 			]
+		},
+
+		"punctuation": {
+			"patterns": [{
+				"name": "punctuation.delimiter",
+				"match": "(\\(|\\)|\\{|\\}|\\;|\\?|\\:)"
+			}]
+		},
+
+		"variables": {
+			"patterns": [{
+				"name": "variable.name",
+				"match": "\\b[A-Za-z_]\\w*\\b"
+			}]
 		}
 	}
 }

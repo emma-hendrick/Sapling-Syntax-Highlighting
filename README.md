@@ -4,13 +4,7 @@ A visual studio code extension with basic syntax highlighting for the Sapling la
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Syntax Highlighting!
 
 ## Known Issues
 
@@ -21,6 +15,25 @@ None yet, let me know as you find them.
 ### 0.0.0
 
 Beginning development of Sapling syntax higlighter.
+
+### 0.1.0
+
+Basic syntax highlighting is now implemented. The following token types are supported
+- Multi-Line Embedded Documentation Comment
+- Multi-Line Comment
+- Comment
+- IntegerLiteral
+- FloatLiteral
+- CharacterLiteral
+- BooleanLiteral
+- StringLiteral
+- Type
+- Keyword
+- ComparisonOperator
+- ArithmeticOperator
+- BooleanOperator
+- Delimeter
+- Identifier
 
 ---
 
