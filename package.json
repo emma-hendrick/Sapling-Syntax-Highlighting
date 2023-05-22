@@ -3,9 +3,13 @@
   "displayName": "Sapling",
   "description": "Sapling for Visual Studio Code",
   "icon": "saplingIcon.png",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.76.0"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/michhendrick/Sapling-Syntax-Highlighting"
   },
   "categories": [
     "Programming Languages"
