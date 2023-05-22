@@ -1,0 +1,26 @@
+{
+  "name": "sapling",
+  "displayName": "Sapling",
+  "description": "Sapling for Visual Studio Code",
+  "icon": "saplingIcon.png",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "sapling",
+      "aliases": ["Sapling", "sapling"],
+      "extensions": [".sl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "sapling",
+      "scopeName": "source.sl",
+      "path": "./syntaxes/sapling.tmLanguage.json"
+    }]
+  }
+}
