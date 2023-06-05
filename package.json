@@ -18,12 +18,12 @@
     "languages": [{
       "id": "sapling",
       "aliases": ["Sapling", "sapling"],
-      "extensions": [".sapl"],
+      "extensions": [".sl"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
       "language": "sapling",
-      "scopeName": "source.sapl",
+      "scopeName": "source.sl",
       "path": "./syntaxes/sapling.tmLanguage.json"
     }]
   }

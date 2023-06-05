@@ -1,7 +1,7 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Sapling",
-	"scopeName": "source.sapl",
+	"scopeName": "source.sl",
 	"patterns": [
 		{
 			"include": "#comments"
@@ -64,12 +64,12 @@
 		},
 
 		"strings": {
-			"name": "string.quoted.double.sapling",
+			"name": "string.quoted.double.sling",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.sapling",
+					"name": "constant.character.escape.sling",
 					"match": "\\\\."
 				}
 			]
