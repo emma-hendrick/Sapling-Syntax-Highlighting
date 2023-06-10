@@ -78,7 +78,7 @@
 		"storage": {
 			"patterns": [{
 				"name": "storage.type",
-				"match": "\\b(int|float|str|char|bool|void)\\b"
+				"match": "\\b(int|float|str|char|bool)\\b"
 			}]
 		},
 
@@ -86,7 +86,7 @@
 			"patterns": [
 				{
 					"name": "keyword.control",
-					"match": "\\b(if|else|for|while|return|switch|case|break|continue)\\b"
+					"match": "\\b(return)\\b"
 				},
 				{
 					"name": "keyword.operator",
@@ -98,7 +98,7 @@
 		"punctuation": {
 			"patterns": [{
 				"name": "punctuation.delimiter",
-				"match": "(\\(|\\)|\\{|\\}|\\;|\\?|\\:)"
+				"match": "(\\(|\\)|\\{|\\}|\\;)"
 			}]
 		},
 
