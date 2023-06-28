@@ -58,7 +58,7 @@
 				},
 				{
 					"name": "constant.language",
-					"match": "\\b(True|False)\\b"
+					"match": "\\b(true|false)\\b"
 				}
 			]
 		},
