@@ -13,6 +13,9 @@
 			"include": "#strings"
 		},
 		{
+			"include": "#BIFS"
+		},
+		{
 			"include": "#storage"
 		},
 		{
@@ -73,6 +76,13 @@
 					"match": "\\\\."
 				}
 			]
+		},
+
+		"BIFS": {
+			"patterns": [{
+				"name": "entity.name.function",
+				"match": "(printf|getchar|flush_stdin)"
+			}]
 		},
 
 		"storage": {
